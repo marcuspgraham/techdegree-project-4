@@ -1,19 +1,38 @@
 /* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+
+* {
+  font-family: 'Lato', sans-serif;
+  color: $color-text-base ;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* ============================================= */
 /*              Typography                       */
 /* ============================================= */
 
 .headline-primary {
-    color: #58e1c1;
+    color: $color-prim;
     margin-left: 10px;
   }
   
   .headline-secondary {
     font-weight: 300;
-    color: #777;
+    color: $color-text-base;
   }
   
   .link {
-    color: #51ddfc;
+    color: $color-sec;
     font-weight: 700;
   }
   
@@ -23,7 +42,7 @@
     font-style: italic;
     margin-left: 20px;
     padding-left: 20px;
-    border-left: 8px solid #58e1c1;
+    border-left: 8px solid $color-prim;
     border-radius: 5px;
   }
   
