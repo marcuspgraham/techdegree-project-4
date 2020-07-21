@@ -3,13 +3,19 @@
 
 @mixin mq($break) {
     @if $break == "small" {
-        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+        @media (min-width: $layout-breakpoint) and (max-width: $layout-breakpoint-small) {
             @content;
         }
     }
     @else if $break == "medium" {
-        @media (min-width: $breakpoint-md + 1) {
-            @content;   
+        @media (min-width: $layout-breakpoint-small + 1) {
+            @content; 
         }
     }
 }
+
+// Buttons
+
+@mixin btn-theme($color-prim) {
+    background-color: darken($color-prim, 100%);
+  }

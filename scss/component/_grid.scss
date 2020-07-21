@@ -1,4 +1,36 @@
 /* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+.img {
+  &-avatar {
+    display: $disp;
+    margin-left: $margl;
+    margin-right: $margr;
+    margin-top: 10px;
+    max-width: $maxw; 
+    max-height: 100%;
+  }
+  
+  &-frame {
+    display: $disp;
+    margin-left: $margl;
+    margin-right: $margr;
+    margin-top: 10px;
+    max-width: $maxw;
+    padding: 13px;
+    border: 1px solid #ccc;
+  }
+  
+  &-logo {
+    display: $disp;
+    margin-left: $margl;
+    margin-right: $margr;
+  }
+}
+
+
+/* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
 
@@ -14,7 +46,7 @@
   
   [class^=col] {
     margin-top: 10px;
-    flex-basis: 100%;
+    flex-basis: $flexb;
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
@@ -69,6 +101,6 @@
   }
   
   .card {
-    flex-basis: 100%;
+    flex-basis: $flexb;
   }
   

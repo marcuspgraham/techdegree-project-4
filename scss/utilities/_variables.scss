@@ -14,10 +14,26 @@ $color-text-light            : $white;
 $color-text-base             : $grey;
 $color-button-success        : $emerald;
 
+/// Font stacks
+
+$stack-sans-serif  : sans-serif;
+$stack-lato        : 'Lato', $stack-sans-serif;
+
+$font-w            : 300;
+
+/// Image & container variables
+
+$disp     : block;
+$maxw     : 100%;
+$margl    : auto;
+$margr    : auto;
+
+/// Grid
+
+$flexb    : 100%;
+
 /// Media query breakpoint
 
-$brk-narrow : '(min-width: 768px)';
-
-$brkpoint-sm  : 1px;
-$brkpoint-m  : 768px;
+$layout-breakpoint         : 1px;
+$layout-breakpoint-small   : 768px;
 

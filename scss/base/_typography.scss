@@ -3,8 +3,8 @@
 /* ============================================= */
 
 * {
-  font-family: 'Lato', sans-serif;
-  color: $color-text-base ;
+  font-family: $stack-lato;
+  color: $color-text-base;
   box-sizing: border-box;
 }
 
@@ -21,15 +21,18 @@ a {
 /*              Typography                       */
 /* ============================================= */
 
-.headline-primary {
+
+.headline {
+  &-primary {
     color: $color-prim;
     margin-left: 10px;
   }
   
-  .headline-secondary {
-    font-weight: 300;
+  &-secondary {
+    font-weight: $font-w;
     color: $color-text-base;
   }
+}
   
   .link {
     color: $color-sec;
@@ -38,7 +41,7 @@ a {
   
   .blockquote {
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: $font-w;
     font-style: italic;
     margin-left: 20px;
     padding-left: 20px;

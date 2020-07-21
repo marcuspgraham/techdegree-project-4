@@ -13,15 +13,18 @@
     text-align: center;
     border-radius: 5px;
     padding: 10px 0;
-    display: block;
+    display: $disp;
     width: 100%;
-    transition: 
-      background-color .2s ease-in-out, 
+    transition: background-color .2s ease-in-out, 
       color .2s ease-in-out;
   }
   
   .nav-link:hover {
+    @include btn-theme($viking);
     color: $color-text-light;
-    background-color: $color-prim;
+    background-color: lighten($color-prim, 15%);
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
   }
+
+
   
