@@ -3,12 +3,12 @@
 
 @mixin mq($break) {
     @if $break == "small" {
-        @media (min-width: $layout-breakpoint) and (max-width: $layout-breakpoint-small) {
+        @media (min-width: $break-small) {
             @content;
         }
     }
     @else if $break == "medium" {
-        @media (min-width: $layout-breakpoint-small + 1) {
+        @media (min-width: $break-medium) {
             @content; 
         }
     }
