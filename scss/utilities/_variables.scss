@@ -47,9 +47,5 @@ $color-btn: (
  'warning': #fd7856,
 );
 
-@each $name, $color in $color-btn {
-    .#{$name} {
-        color: $color;
-    }
-  }
+
 

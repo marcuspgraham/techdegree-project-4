@@ -13,24 +13,11 @@
 }
 
 
-.default {
-  background-color: $color-sec;
+@each $name, $color in $color-btn {
+  .#{$name} {
+    background-color: $color;
+    &:hover {
+      background-color: lighten($color, 15%);
+    }
+  }
 }
-
-.error {
-  background-color: #e4757a;
-}
-
-.info {
-  background-color: #927bc1;
-}
-
-.success {
-  background-color: $color-button-success;
-}
-
-.warning {
-  background-color: #fd7856;
-}
-
-
