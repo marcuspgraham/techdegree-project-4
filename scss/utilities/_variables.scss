@@ -37,4 +37,16 @@ $flexb    : 100%;
 $break-small         : 786px;
 $break-medium        : 1024px;
 
+/// Button colors
+
+$color-btn: (
+ 'default': $color-sec,
+   'error': #e4757a,
+    'info': #927bc1,
+ 'success': $color-button-success,
+ 'warning': #fd7856,
+);
+
+// $active-background: ligthen($background, 15%);
+
 

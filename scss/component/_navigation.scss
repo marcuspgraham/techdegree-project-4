@@ -19,11 +19,16 @@
       color .2s ease-in-out;
   }
   
+  // .nav-link:hover {
+  //   @include btn-theme($viking);
+  //   color: $color-text-light;
+  //   background-color: lighten($color-prim, 15%);
+  //   transition: background-color .5s ease-in-out, color .5s ease-in-out;
+  // }
+
   .nav-link:hover {
-    @include btn-theme($viking);
     color: $color-text-light;
-    background-color: lighten($color-prim, 15%);
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    background-color: $color-prim;
   }
 
 
