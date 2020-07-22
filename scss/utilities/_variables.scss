@@ -47,6 +47,9 @@ $color-btn: (
  'warning': #fd7856,
 );
 
-// $active-background: ligthen($background, 15%);
-
+@each $name, $color in $color-btn {
+    .#{$name} {
+        color: $color;
+    }
+  }
 
